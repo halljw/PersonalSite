@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of John W. Hall">
+  <meta name="author" content="John W. Hall">
+  <title>John Hall</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/logo_favicon.png') }}" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Font for social media icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- custom css for this page -->
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-nav navbar-left">
+        <a class="navbar-brand navbar-left" href="/">
+          <img src="{{ url_for('static', filename='images/logo_transparent.png') }}" alt="JH-Logo">
+        </a>
+      </div><!-- navbar-left -->
+      <div class="navbar-nav navbar-right">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/about">About</a>
+        <a class="nav-item nav-link" href="/resume">Resume</a>
+        <a class="nav-item nav-link" href="/projects">Projects</a>
+        <a class="nav-item nav-link" href="/blog">Blog</a>
+        <a class="nav-item nav-link" href="/contact">Contact</a>
+      </div> <!-- navbar-right -->
+    </div> <!-- container-fluid -->
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+
+  <div class="foot container-fluid jumbotron text-center">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/resume">Resume</a>
+    <a href="/projects">Projects</a>
+    <a href="/blog">Blog</a>
+    <a href="/contact">Contact</a>
+    <div style="padding-bottom: 0.5cm;"></div>
+    <a href="/">
+      <img src="{{ url_for('static', filename='images/logo_transparent.png') }}" alt="JH-Logo">
+    </a>
+    <br/>
+    <h3>Need help on your next project?</h3>
+    <a href="/contact"><button type="button" class="btn btn-lg">Let's work together</button></a>
+  </div>
+
+</body>
+
+
+
+<footer class="footer navbar navbar-fixed-bottom"> 
+  <div class="container text-center">
+    <a href="#"><i class="fa fa-lg fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/john-w-hall-0585a3106"><i class="fa fa-lg fa-linkedin-square"></i></a>
+    <a href="https://www.github.com/halljw"><i class="fa fa-lg fa-github-square"></i></a>
+    <a href="mailto: halljw@seas.upenn.edu"><i class="fa fa-lg fa-envelope"></i></a>
+  </div>
+</footer>
+
+</html>

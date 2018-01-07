@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+
+  {% block content %}
+
+  <!-- BACKGROUND -->
+  <image id="background" style="filter: brightness(60%);"
+     src="{{ url_for('static', filename='images/benjamin_franklin.jpg') }}" alt="Benjamin Franklin on Penn's campus">
+
+  <div style="padding-bottom: 3cm;"></div>
+
+  <!-- TITLE TEXT -->
+  <section class="container-fluid" id="title">
+    <div class="row jumbotron container-fluid text-center">
+      <h3><em>My studies, my work, my passion</em></h3>
+      <h1><strong>All About Me</strong></h1>
+    </div><!-- jumbotron -->
+  </section><!-- title-section -->
+
+  <div style="padding-bottom: 3cm;"></div>
+
+  <!-- ABOUT ME HEADER -->
+  <div class="container-fluid page-description"> 
+    <div class="container text-center" style="margin-top: 2cm; margin-bottom: 2cm;">
+      <h1>Who I am</h1>
+      <h3>What do a biomedical engineer, a patent examiner, a latin dance instructor, and a computational linguist have in common?</h3>
+    </div><!-- container -->
+  </div><!-- container-fluid -->
+
+
+  <!-- ABOUT ME TIMELINE -->
+  <!-- USPTO -->
+  <div class="container-fluid current-projects" style="background-color:rgba(220,220,220,1);">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5" style="margin-top: 2cm; margin-bottom: 2cm;">
+    <h1>A Patent Examiner</h1>
+    <p>
+      Patent examining is, to put it bluntly, a remarkably boring job. At the USPTO, I sifted through a bottomless well of prior art, searching thousands of documents by hand for just the right combination of words in just the right order. If a minor miracle passed which let me find it, I was rewarded with some template paragraphs to let me formulate rule-based arguments regarding the respective patentability (or lack thereof) of a minor tweak to various well-known medical devices.
+    </p>
+
+    <p> 
+      After a solid year of searching, rejecting, and repeating, I caught myself wondering how such a repetitive, deterministic task had resisted automation for so long. Sure, there was an automated search client, but it was a clumsy program that generated essentially unusable results. Even by 2013, our automated search couldn't always recognize the overlapping scope of "fasteners" and "fastenings," let alone "bevel gears" and "hypoids."
+    </p>
+
+    </div> <!-- col-md-5 -->
+    <div class="col-md-5 text-center center-block" style="margin-top: 2cm; margin-bottom: 2cm;">
+      <image style="width: 800px; height: auto;" src="{{ url_for('static', filename='images/uspto.jpg') }}" alt="United States Patent and Trademark Office">
+    </div> <!-- col-md-5 -->
+    <div class="col-md-1">
+    </div>
+  </div> <!-- container-fluid -->
+
+
+  <!-- UIUC -->
+  <div class="container-fluid current-projects" >
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5 text-center center-block" style="margin-top: 2cm; margin-bottom: 2cm;">
+      <image style="width: 800px; height: auto;" src="{{ url_for('static', filename='images/uiuc.jpg') }}" alt="University of Illinois at Urbana-Champaign">
+    </div> <!-- col-md-5 -->
+    <div class="col-md-5" style="margin-top: 2cm; margin-bottom: 2cm;">
+    <h1>A Fighting Illini</h1>
+
+    <p>
+      A cursory web search led me from automated word searches to a field called computational linguistics. That search led me to an introductory linguistics course at Georgetown University. And that course would soon lead me to give up patent examining and head back to school. Newly a proud member of the fighting Illini, I settled into classes certain that an MA in linguistics would help me unravel the mysteries of language that remained inscrutable to machines.
+    </p>
+
+    <p>
+      UIUC's linguistics department gifted me with a great many opportunities. For two semesters I was the sole instructor of a course on the interesection between language and technology and the ballroom/latin junior instructor of UIUC's social dance club. I learned the basics of natural language processing and even implemented a working model of the IBM Model 1 statistical machine translator. But it was machine learning that truly captured my imagination. It only took one Naive-Bayes classifier to convince me what my thesis would be about.
+    </p>
+
+    </div> <!-- col-md-5 -->
+    <div class="col-md-1">
+    </div>
+  </div> <!-- container-fluid -->
+
+  <!-- UPENN -->
+  <div class="container-fluid current-projects" style="background-color:rgba(220,220,220,1);">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5" style="margin-top: 2cm; margin-bottom: 2cm;">
+    <h1>A Quaker</h1>
+
+    <p>
+      With my sights set on the fundamentals of computer science, I made my way to Philadelphia to join the next class of Penn's elite <a href="https://www.cis.upenn.edu/prospective-students/graduate/mcit.php">MCIT program</a>. Here, I'm surrounded by a diverse array of backgrounds, from Finance to Law to French Literature, all of us with the same drive to use advanced studies in information technology to embark on a successful career and attack the most interesting problems of our day.
+    </p>
+
+    <p>
+      Nowadays, when I'm not working you can catch me listening to a veritably obscene number of podcasts in between bouts of ballroom dancing and rock climbing. If I'm not on the dance floor or dangling by my fingertips, you might try Penn's Van Pelt library where I'll be admiring the collection's Shakespeare manuscripts.
+    </p>
+
+    </div> <!-- col-md-5 -->
+    <div class="col-md-5 text-center center-block" style="margin-top: 2cm; margin-bottom: 2cm;">
+      <image style="width: 800px; height: auto;" src="{{ url_for('static', filename='images/bench_franklin.jpg') }}" alt="Benjamin Franklin on Penn campus">
+    </div> <!-- col-md-5 -->
+    <div class="col-md-1">
+    </div>
+  </div> <!-- container-fluid -->
+
+
+  {% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+  {% block content %}
+
+  <!-- BACKGROUND OF NAVIGATION BAR -->
+  <image id="background" style="filter: brightness(80%);"
+     src="{{ url_for('static', filename='images/projects.jpg') }}" alt="Placeholder photo">
+
+
+  <div style="padding-bottom: 3cm;"></div>
+
+  <!-- TITLE TEXT -->
+  <section class="container-fluid" id="title">
+    <div class="row jumbotron container-fluid text-center">
+      <h3><em>Here's what I've been up to lately</em></h3>
+      <h1><strong>Projects and Collaborations</strong></h1>
+    </div><!-- jumbotron -->
+  </section><!-- title-section -->
+
+  <div style="padding-bottom: 3cm;"></div>
+
+
+  <!-- RESUME -->
+  <div class="container-fluid page-description">
+    <h1>TEST</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+  </div> <!-- container-fluid -->
+
+  {% endblock %}
+
