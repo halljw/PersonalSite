@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of John W. Hall">
+  <meta name="author" content="John W. Hall">
+  <title>John Hall</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/logo_favicon.png') }}" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <nav class="nav flex-column flex-sm-row">
+    <a class="nav-item nav-link" href="">Home</a>
+    <a class="nav-item nav-link" href="">About</a>
+    <a class="nav-item nav-link" href="">Resume</a>
+    <a class="nav-item nav-link" href="">Projects</a>
+    <a class="nav-item nav-link" href="">Blog</a>
+    <a class="nav-item nav-link" href="">Contact</a>
+  </nav>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="{{ url_for('static', filename='images/logo_transparent.png') }}">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="my_navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <div class="nav navbar-nav navbar-right dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Contact Me
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Link 2</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Link 3</a></li>
+            <li class="divider"></li>
+            <li>
+              <a href="mailto: halljw@seas.upenn.edu" role="button">Send me an email!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  {% block content %}
+  {% endblock %}
+
+
+</body>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</html>
