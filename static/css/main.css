@@ -43,6 +43,11 @@ a {
 
 .navbar-brand img {
   height: 80px;
+  transition: all .5s ease;
+}
+
+.navbar-brand img:hover {
+  filter: brightness(50%);
 }
 
 .navbar a {
@@ -104,21 +109,36 @@ a {
   text-justify: inter-word;
   font-size: 22px;
   color: white;
-  text-indent: 1em;
   text-decoration: italic;
   text-shadow: 0px 0px 1px black;
 }
 .carousel-inner a {
-  text-decoration: underline, bold;
+  text-decoration: none;
+  transition: all .5s ease;
 }
+
+.carousel-inner a:hover {
+  color: darkgray;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px black;
+}
+
 .carousel-inner h2 {
   text-align: center;
   font-weight: bold;
   color: white;
   text-shadow: 0px 0px 5px black;
 }
+
 .carousel-caption {
   height: 300px;
+}
+
+.carousel-inner img:hover {
+  height: 237px;
+  width: 237px;
+  padding: 0px;
+  transition: all .5s ease;
 }
 
 
@@ -197,16 +217,39 @@ a {
   border-color: darkgray;
 }
 
+.current-projects a, .latest-blogs a {
+  color: black;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+
+.current-projects a:hover, .latest-blogs a:hover {
+  color: lightgray;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px black;
+}
+
+.current-projects img:hover, .latest-blogs img:hover {
+  height: 301px;
+  width: 451px;
+  padding: 0px;
+  transition: all .5s ease;
+}
 
 /* Footer */
 .foot {
   background-color: rgba(30,30,30,1);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .foot img {
   height: 150px;
   width: auto;
+  transition: all .5s ease;
+}
+.foot img:hover {
+  filter: brightness(50%);
 }
 
 .foot a {
@@ -240,6 +283,13 @@ a {
   color: white;
 }
 
+
+/* RESUME */
+.main-resume h1, .main-resume h2, .main-resume h4 {
+  font-family: 'Arvo', courier, serif;
+  font-weight: bold;
+}
+
 .main-resume button {
   background: transparent;
   border: 5px double black;
@@ -252,5 +302,16 @@ a {
 .main-resume button:hover {
   color: darkgray;
   border-color: darkgray;
+}
+
+.main-resume a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .5s ease;
+}
+.main-resume a:hover {
+  color: lightgray;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px black;
 }
 

@@ -20,12 +20,34 @@
 
   <div style="padding-bottom: 3cm;"></div>
 
-  <!-- RESUME -->
-  <div class="container-fluid page-description center-block">
-    <h1>Coming Soon</h1>
-    <h2>The best is yet to come. Check back here soon!</h2>
-    <img src="{{ url_for('static', filename='images/construction.jpeg') }}" alt="Coming soon" style="border-radius: 0%; width: 800px; height: auto; display: block; margin: auto;">
-  </div> <!-- container-fluid -->
+  <!-- MAIN HEADER -->
+  <div class="container-fluid main-resume" style="background-color: white; padding: 50px;">
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-4 text-center">
+        <image style="width: 100%; padding: 20px; border-radius: 30px;" 
+          src="{{ url_for('static', filename='images/quality_bar_2.jpg') }}" alt="John Hall">
+      </div>
+      <div class="col-lg-4">
+        <h1><strong>HI, I'M <span style="color:blue;">JOHN HALL</span></strong></h1>
+        <h3><strong><em>Linguist & Developer</em></strong></h3>
+        <h4><strong>Email:</strong> halljw@seas.upenn.edu</h4>
+        <h4><strong>Phone:</strong> 954-632-3507</h4>
+        </p>
+        <div style="margin-top: 4cm; font-size: 40px;">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100010053704316" style="padding-right: 20px;"><i class="fa fa-lg fa-facebook"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/john-w-hall-0585a3106" style="padding-right: 20px;"><i class="fa fa-lg fa-linkedin-square"></i></a>
+          <a target="_blank" href="https://upenn.joinhandshake.com/users/8073771" style="padding-right: 20px;"><i class="fa fa-lg fa-handshake-o"></i></a>
+          <a target="_blank" href="https://www.github.com/halljw" style="padding-right: 20px;"><i class="fa fa-lg fa-github-square"></i></a>
+          <a href="mailto: halljw@seas.upenn.edu"><i class="fa fa-lg fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2">
+      </div>
+    </div>
+  </div><!-- container-fluid -->
+
 
   {% endblock %}
 

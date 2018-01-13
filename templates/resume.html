@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="static/css/circle.css">
 
   <!-- BACKGROUND OF NAVIGATION BAR -->
-  <image id="background" style="filter: brightness(60%);"
+  <img id="background" style="filter: brightness(60%);"
      src="{{ url_for('static', filename='images/notebook.jpg') }}" alt="Placeholder photo">
 
   <div style="padding-bottom: 3cm;"></div>
@@ -27,41 +27,45 @@
   <div class="container-fluid page-description">
     <div class="container text-center" style="margin-top: 2cm; margin-bottom: 2cm;">
       <h1>The road less traveled</h1>
-      <p>From biomedical engineer to patent examiner to physics teacher to linguist, this road has afford more opportunities to learn than I could have hoped for on a straight-line path through school alone. </p>
+      <p>From biomedical engineer to patent examiner to physics teacher to linguist, this road has afforded more opportunities than I could have hoped for on a straight-line path.</p>
     </div><!-- container -->
   </div> <!-- container-fluid -->
 
-  <!-- MAIN HEADER -->
+
+  <!-- EDUCATION -->
   <div class="container-fluid main-resume" style="background-color: white; padding: 50px;">
-    <div class="row">
-      <div class="col-lg-1">
-      </div>
-      <div class="col-lg-4 text-center">
-        <image style="width: 100%; padding: 20px; border-radius: 30px;" 
-          src="{{ url_for('static', filename='images/quality_bar_2.jpg') }}" alt="John Hall">
-        <a href="/contact"><button type="button" class="btn btn-lg" style="padding: 18px 28px; font-size: 22px;">Contact Me</button></a>
-      </div>
-      <div class="col-lg-6">
-        <h1><strong>HI I'M <span style="color:blue;">JOHN HALL</span></strong></h1>
-        <h3><strong><em>Linguist & Developer</em></strong></h3>
-        <p>Lorem ipsum dolor sit amet</p>
-        <p>
-          Email: halljw@seas.upenn.edu
-          Phone: 954-632-3507
-          Address: xxx xxx
-        </p>
-        <div style="margin-top: 4cm; font-size: 40px;">
-          <a href="#" style="padding-right: 20px;"><i class="fa fa-lg fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/john-w-hall-0585a3106" style="padding-right: 20px;"><i class="fa fa-lg fa-linkedin-square"></i></a>
-          <a href="https://upenn.joinhandshake.com/users/8073771" style="padding-right: 20px;"><i class="fa fa-lg fa-handshake-o"></i></a>
-          <a href="https://www.github.com/halljw" style="padding-right: 20px;"><i class="fa fa-lg fa-github-square"></i></a>
-          <a href="mailto: halljw@seas.upenn.edu"><i class="fa fa-lg fa-envelope"></i></a>
+    <div class="container-fluid text-center">
+      <h1>EDUCATION</h1>
+      <div class="row">
+
+        <div class="col-lg-4 container text-center">
+          <h2><strong>University of Pennsylvania</strong></h2>
+          <div style="padding-bottom: 0.9cm;"></div>
+          <img src="{{ url_for('static', filename='images/small_upenn_campus.jpg') }}" alt="University of Pennsylvania's campus">
+          <h3><strong>M.S.</strong> in <em>Computer Information and Technology</em></h3>
+          <h4><em>Philadelphia, PA</em> | 2019</h4>
         </div>
-      </div>
-      <div class="col-lg-1">
-      </div>
+
+        <div class="col-lg-4 text-center">
+          <h2><strong>University of Illinois at Urbana-Champaign</strong></h2>
+          <img src="{{ url_for('static', filename='images/small_uiuc_campus.jpg') }}" alt="University of Illinois main quad">
+          <h3><strong>M.A.</strong> in <em>Linguistics</em></h3>
+          <h4><em>Urbana, IL</em> | 2017</h4>
+        </div>
+
+
+        <div class="col-lg-4 text-center">
+          <h2><strong>Vanderbilt University</strong></h2>
+          <div style="padding-bottom: 0.9cm;"></div>
+          <img src="{{ url_for('static', filename='images/vandy_2012.jpg') }}" alt="Vanderbilt class of 2012">
+          <h3><strong>B.S.</strong> in <em>Biomedical Engineering</em></h3>
+          <h4><em>Nashville, TN</em> | 2012</h4>
+        </div>
+
+      </div><!-- row -->
     </div>
   </div><!-- container-fluid -->
+
 
   <!-- SKILLS -->
   <div class="container-fluid main-resume" style="background-color: ghostwhite; padding: 50px;">
@@ -69,21 +73,19 @@
       <h1>SKILLS</h1>
       <div class="row">
 
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-6 text-center">
           <h2>Professional skills</h2>
           <br/>
 
 
-          <div class="row" id="circles">
+          <div class="row" style="width: 100%;" id="circles">
 
             <!-- Circle progress bar -->
             <div class="col-lg-4">
               <div class="row">
                 <h4>Natural Language Processing</h4>
               </div>
-              <div class="c100 p90">
+              <div class="c100 c100.center p90" style="margin: 0 auto;">
                 <span>90%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -95,10 +97,11 @@
             <!-- Circle progress bar -->
             <div class="col-lg-4">
               <div class="row">
-                <h4>Skill 2</h4>
+                <h4>Machine Learning</h4>
+                <br/>
               </div>
-            <div class="c100 p25">
-              <span>25%</span>
+            <div class="c100 c100.center p80" style="margin: 0 auto;">
+              <span>80%</span>
               <div class="slice">
                 <div class="bar"></div>
                 <div class="fill"></div>
@@ -109,10 +112,11 @@
             <!-- Circle progress bar -->
             <div class="col-lg-4">
               <div class="row">
-                <h4>Skill 3</h4>
+                <h4>Web Development</h4>
+                <br/>
               </div>
-            <div class="c100 p25">
-              <span>25%</span>
+            <div class="c100 c100.center p75" style="margin: 0 auto;">
+              <span>75%</span>
               <div class="slice">
                 <div class="bar"></div>
                 <div class="fill"></div>
@@ -122,33 +126,34 @@
 
           </div><!-- circles -->
 
+          <br/>
            
           <div class="row">
-            <div class="col-lg-6">
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 1</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 2</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 3</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 4</i>
+            <div class="col-lg-12">
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">NLTK</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Flask</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Sci-kit Learn</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Bootstrap</i>
             </div>
-            <div class="col-lg-6">
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 1</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 2</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 3</i>
-              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Skill 4</i>
+          </div><!-- row -->
+          <div class="row">
+            <div class="col-lg-12">
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">LaTeX</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Shell scripting</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Git</i>
+              <i class="fa fa-lg fa-check-square-o" style="padding: 10px;">Unix/Linux</i>
             </div>
           </div><!-- row -->
 
-        </div><!-- col-lg-5 -->
+        </div><!-- col-lg-6 -->
 
 
-        <div class="col-lg-1">
-        </div>
 
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-6 text-center">
           <h2>Programming and Development Skills</h2>
           <br/>
 
-          <div class="container" style="width: 100%;" id="bars">
+          <div class="container" style="width: 80%;" id="bars">
 
             <div class="progress" style="height: 40px;">
               <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%; font-size: 20px; line-height:40px;">
@@ -173,41 +178,26 @@
 
             <div class="progress" style="height: 40px;">
               <div class="progress-bar progress-bar-success" role="progressbar" style="width:75%; font-size: 20px; line-height: 40px;">
-                <strong>GIT</strong>
+                <strong>C/C++</strong>
               </div>
               <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:25%;"></div>
             </div><!-- progress -->
 
+            <div class="progress" style="height: 40px;">
+              <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%; font-size: 20px; line-height: 40px;">
+                <strong>R</strong>
+              </div>
+              <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:30%;"></div>
+            </div><!-- progress -->
+
           </div><!-- bars -->
 
-        </div><!-- col-lg-5 -->
+        </div><!-- col-lg-6 -->
 
-        <div class="col-lg-2">
-        </div>
 
       </div>
     </div>
   </div><!-- container-fluid -->
-
-  <!-- EDUCATION -->
-  <div class="container-fluid main-resume" style="background-color: white; padding: 50px;">
-    <div class="container text-center">
-      <h1>EDUCATION</h1>
-      <div class="row">
-        <div class="col-lg-3 text-center">
-          <h2>Penn</h2>
-        </div>
-        <div class="col-lg-3 text-center">
-          <h2>UIUC</h2>
-        </div>
-        <div class="col-lg-3 text-center">
-          <h2>Vanderbilt</h2>
-        </div>
-      </div><!-- row -->
-    </div>
-  </div><!-- container-fluid -->
-
-
 
 
 

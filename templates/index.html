@@ -24,46 +24,32 @@
   <div style="padding-bottom: 7cm;"></div>
 
   <!-- CAROUSEL -->
-  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="false" style="height: 300px; background-color: rgba(0,0,0,.9);">
+  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="false" style="height: 300px; background-color: rgba(0,0,0,.9); padding-bottom: 350px;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
       <li data-target="#carousel" data-slide-to="1"></li>
       <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
     </ol>
   
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="background-color: rgba(0,0,0,0.0);"> 
+    <div class="carousel-inner"> 
   
-      <div class="item active container">
-        <h2>Test header</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-5">
-              <img src="{{ url_for('static', filename='images/john.png') }}" alt="John Hall">
-            </div>
-            <div class="col-md-5">
-              <br/>
-              <br/>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="col-md-1">
-            </div>
-          </div><!-- row -->
-        </div><!-- container -->
-      </div><!-- item container -->
             
 
-      <div class="item container">
-        <h2>BlockheadExchange.com</h2>
+      <div class="item active container">
+        <a target="_blank" href="http://www.blockheadexchange.com">
+          <h2>BlockheadExchange.com</h2>
+        </a>
         <div class="container">
           <div class="row">
             <div class="col-md-1">
             </div>
             <div class="col-md-5">
-              <img src="{{ url_for('static', filename='images/blockheads_logo.png') }}" alt="Investment graphs">
+              <a target="_blank" href="http://www.blockheadexchange.com">
+                <img src="{{ url_for('static', filename='images/blockheads_logo.png') }}" alt="Blockhead Exchange">
+              </a>
             </div>
             <div class="col-md-5">
               <br/>
@@ -75,7 +61,46 @@
           </div><!-- row -->
         </div><!-- container -->
       </div><!-- item container -->
-            
+
+      <div class="item container">
+        <h2>IBM Model 1 Translator</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+              <img style="border-radius: 0%; width: auto;" src="{{ url_for('static', filename='images/rosetta-stone2.png') }}" alt="Rosetta">
+            </div>
+            <div class="col-md-5">
+              <br/>
+              <h2>(Coming soon)</h2>
+              <p>The IBM Model 1 translator laid the foundation that the majority of modern statistical translators are built on. See a demonstration of how the model assigns translation probabilities to words in parallel texts.</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- item container -->
+
+      <div class="item container">
+        <h2>Yup`ik Spellchecker</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+              <img src="{{ url_for('static', filename='images/rsz_yupik.png') }}" alt="Yup`ik Phonetics">
+            </div>
+            <div class="col-md-5">
+              <br/>
+              <h2>(Coming soon)</h2>
+              <p>The Yup`ik Language is one of the world's many less commonly studied languages with few linguistic resources of its own. Click here to test a spellchecker for Central Alaskan Yup`ik.</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- item container -->
 
       <div class="item container">
         <h2>Text Analyzer</h2>
@@ -84,12 +109,11 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-5">
-              <img src="{{ url_for('static', filename='images/bitcoin.jpg') }}" alt="Bitcoin">
+              <img style="" src="{{ url_for('static', filename='images/text_analysis.jpeg') }}" alt="Rosetta">
             </div>
             <div class="col-md-5">
               <br/>
-              <br/>
-              <p>(Coming soon)</p>
+              <h2>(Coming soon)</h2>
               <p>Interested in Natural Language Processing? Come see the basics in action and get the breakdown on some of my favorite pieces of literature or upload some of your own!</p>
             </div>
             <div class="col-md-1">
@@ -138,12 +162,14 @@
 
   <!-- My current projects -->
   <div class="container-fluid current-projects" style="padding: 50px;">
-    <h1>My Current Projects</h1>
+    <a href="/projects"><h1>My Current Projects</h1></a>
     <div class="row">
       <div class="col-md-4 text-center center-block">
         <h2>Block Head Exchange</h2>
-        <img src="{{ url_for('static', filename='images/investor_screenshot.png') }}" alt="BlockHead Investment Engine">
-        <p>Block Head Exchange, the cyrptocurrency advisor page, is officially live! Check out the investment engine I built <a href="www.blockheadexchange.com">here</a>.</p>
+        <a href="http://www.blockheadexchange.com">
+          <img src="{{ url_for('static', filename='images/investor_screenshot.png') }}" alt="BlockHead Investment Engine">
+        </a>
+        <p>Block Head Exchange, the cyrptocurrency advisor page, is officially live! Check out the investment engine I built there.</p>
       </div>
       <div class="col-md-4 text-center center-block">
         <h2>Project 2</h2>
@@ -163,7 +189,7 @@
 
   <!-- My latest blog posts -->
   <div class="container-fluid latest-blogs" style="padding: 50px;">
-    <h1>My Latest Blog Post</h1>
+    <a href="/blog"><h1>My Latest Blog Post</h1></a>
     <div class="container text-center center-block">
       <img src="{{ url_for('static', filename='images/construction.jpeg') }}" alt="">
       <p style="font-size:20px; font-eight:bold;">My blog will be up and running in no time. Check back soon!</p>
