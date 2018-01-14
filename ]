@@ -173,11 +173,10 @@ a {
 }
 
 .page-description img {
-  width: 100%;
-  height: auto;
-  border-radius: 50px;
-  padding: 30px;
-  float: right;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  padding: 10px;
   -webkit-filter: drop-shadow(20px 20px 20px #222);
 }
 
@@ -291,44 +290,6 @@ a {
   font-weight: bold;
 }
 
-.main-resume p {
-  font-family: 'Arvo', courier, serif;
-  font-size: 12px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.contact-photo img {
-  width: 65%;
-  height: auto;
-  float: right;
-  padding: 20px;
-  border-radius: 50px;
-}
-
-.main-resume img {
-  width: 100%;
-  height: auto;
-  float: center;
-  padding: 10px;
-}
-
-#thesis {
-  border: 5px double black;
-}
-
-.thesis img {
-  transition: all .5s ease;
-  width: 90%;
-  height: auto;
-  padding: 30px;
-}
-
-.thesis img:hover {
-  width: 91%;
-  padding: 0px;
-}
-
 .main-resume button {
   background: transparent;
   border: 5px double black;
@@ -352,5 +313,20 @@ a {
   color: lightgray;
   text-decoration: none;
   text-shadow: 0px 0px 2px black;
+}
+
+.profile-img {
+  display:block;
+  position:relative;
+}
+.profile-img:before {
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0px 0px 0px 0px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 0px 0px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 0px 0px rgba(255,255,255,1);
 }
 

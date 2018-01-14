@@ -199,7 +199,31 @@
     </div>
   </div><!-- container-fluid -->
 
+  <!-- THESIS -->
+  <div class="container-fluid main-resume text-center" style="background-color: white; padding: 50px;">
+    <h1>M.A. THESIS</h1>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-5 thesis text-center center-block">
+        <a target="_blank" href="http://hdl.handle.net/2142/97430">
+          <img id="thesis" src="{{ url_for('static', filename='images/thesis_cover.png') }}" alt="Cover of my thesis">
+        </a>
+      </div>
+      <div class="col-lg-5">
+        <h2>Abstract</h2>
+          <p style="font-size: 16px;">
+This thesis explores the performance of a variety of machine learning techniques for the task of multi-label document classification applied to a corpus of United States patent grants. The rapidly rising number of patent applications in the past several decades has led to a rising need for enhanced automatic patent processing tools. The task of automated document classification in particular has been targeted as an important point of research. However, the development of adequate tools has been limited in part by the esoteric writing style particular to intellectual property and the overlapping categorizations of the branched hierarchical classification system employed by the CPC. A patent document corpus offers a large, publicly available training set consisting of both structured and unstructured data. The application of machine learning techniques to this corpus may help relieve the increasing need for highly trained human classifiers. The contributions of the present work are 2-fold. First, the present work constructed a patent document corpus by gathering 4500 patent documents from years 2015 and 2014 and compiling relevant structured and textual data relevant to an automated classification task. Second, it offers an examination of five different machine learning techniques as automated classifiers for patent documents by section. Test trials under different preprocessing conditions utilizing principal component analysis and word selection were applied in training supervised learning classifiers. It was found that principal component analysis of the patent documents without further feature selection yielded the greatest performance for all machine learning models. This approach also revealed an effect of dataset size where increasing the size of the training set increased the overall performance of Decision Tree, Support Vector Machine, Logistic Regression, and Neural Net models. It was further found that some classifiers trained on data not subject to principal component analysis showed decreasing performance metrics with increasing data sizes.
+        </p>
 
+
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div><!-- row -->
+  </div><!-- container-fluid -->
 
   {% endblock %}
 
