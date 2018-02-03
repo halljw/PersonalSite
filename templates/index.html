@@ -37,8 +37,31 @@
     <div class="carousel-inner"> 
   
             
-
       <div class="item active container">
+        <a target="_blank" href="http://www.blockheadexchange.com">
+          <h2>BlockheadExchange.com</h2>
+        </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+              <a target="_blank" href="http://www.blockheadexchange.com">
+                <img src="{{ url_for('static', filename='images/blockheads_logo.png') }}" alt="Blockhead Exchange">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <br/>
+              <br/>
+              <p>Blockhead Exchange is officially live. Click <a href="www.blockheadexchange.com">here</a> to keep up to date with your cryptocurrency of choice and start investing like a blockhead!</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- item container -->
+
+      <div class="item container">
         <a target="_blank" href="http://www.blockheadexchange.com">
           <h2>BlockheadExchange.com</h2>
         </a>
@@ -164,6 +187,15 @@
   <div class="container-fluid current-projects" style="padding: 50px;">
     <a href="/projects"><h1>My Current Projects</h1></a>
     <div class="row">
+
+      <div class="col-md-4 text-center center-block">
+        <h2>Penn Of Course</h2>
+        <a target="_blank" href="https://penn-ofcourse.herokuapp.com">
+          <img style="height: 87%; width: 87%;" src="{{ url_for('static', filename='images/penn_of_course.png') }}" alt="Penn Of course">
+        </a>
+        <p><span style="text-decoration: underline;"><a target="_blank" href="https://www.pennapps.com"><em>PennApps Winter 2018</em></a></span> was a great success! My collaborators and I built "Penn, Of Course", a machine-learning driven engine for finding courses at the University of Pennsylvania you always dreamed of but never knew existed. Set your personal preferences for each criterion and find the course best suited to you. Check out our <span style="text-decoration: underline;"><a href="https://github.com/kaushik316/OfCourse"><em>git repo</em></a></span> or <span style="text-decoration: underline;"><a href="https://penn-ofcourse.herokuapp.com"><em>click here</em></a></span> to see the finished product.</p>
+      </div>
+
       <div class="col-md-4 text-center center-block">
         <h2>Block Head Exchange</h2>
         <a href="http://www.blockheadexchange.com">
@@ -171,16 +203,13 @@
         </a>
         <p>Block Head Exchange, the cyrptocurrency advisor page, is officially live! Check out the investment engine I built there.</p>
       </div>
-      <div class="col-md-4 text-center center-block">
-        <h2>Project 2</h2>
-        <img src="{{ url_for('static', filename='images/construction.jpeg') }}" alt="">
-        <p>I'm working on new projects all the time. Check back soon!</p>
-      </div>
+
       <div class="col-md-4 text-center center-block">
         <h2>Project 3</h2>
         <img src="{{ url_for('static', filename='images/construction.jpeg') }}" alt="">
         <p style="font-size:20px; font-eight:bold;">I'm working on new projects all the time. Check back soon!</p>
       </div>
+
     </div><!-- row -->
     <br/>
     <br/>
